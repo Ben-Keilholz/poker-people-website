@@ -4,7 +4,7 @@ function App() {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch("https://opensheet.elk.sh/16Qpc9Uv54GUV5tZYU9Z6bSzqKFCqKHFUrkC8WAnImUU/Sheet1")
+    fetch("https://opensheet.elk.sh/1MxbyVpmbZ41kUtquiu6fIXUmkIRPG2pjjqWtDBPbTfU/Sheet1")
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a, b) => {
@@ -20,10 +20,10 @@ function App() {
   return (
     <div
       className="min-h-screen bg-repeat bg-top p-6"
-      style={{ backgroundImage: "url('/images/dadbods-logo.jpg')" }}
+      style={{ backgroundColor: "black" }}
     >
       <h1 className="text-3xl font-bold text-center -mt-4 mb-8 text-black drop-shadow">
-        DadBods Poker League Stat Sheet
+        Poker People Leaderboard
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {players.map((player, index) => {
