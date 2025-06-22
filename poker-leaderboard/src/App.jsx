@@ -92,8 +92,8 @@ function App() {
           <span>${Number(player.totalWinnings).toLocaleString()}</span>
         </div>
         <div className="flex justify-between mt-2 text-lg font-semibold">
-          <span>$Net:</span>
-          <span className={netColor}>{net.toLocaleString()}</span>
+          <span>Net:</span>
+          <span className={netColor}>${net.toLocaleString()}</span>
         </div>
       </div>
     </div>
