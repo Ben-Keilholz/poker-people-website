@@ -80,6 +80,9 @@ function App() {
 
       {/* Player name below image */}
       <h2 className="text-xl font-bold mb-4">{player.name}</h2>
+      <div className="text-xs text-gray-600">
+        Sessions played: {player.sessionsPlayed || 0}
+      </div>
 
       {/* Stats */}
       <div className="w-full">
