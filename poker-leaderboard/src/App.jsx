@@ -22,7 +22,7 @@ function App() {
       className="min-h-screen bg-repeat bg-top p-6"
       style={{ backgroundColor: "black" }}
     >
-      <h1 className="text-3xl font-bold text-center -mt-4 mb-8 text-black drop-shadow">
+      <h1 className="text-3xl font-bold text-center -mt-4 mb-8 text-white drop-shadow">
         Poker People Leaderboard
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -71,12 +71,12 @@ function App() {
       <div className="absolute left-4 top-6">{rankDisplay}</div>
 
       {/* Centered player image */}
-      <img
+{/*       <img
         src={player.imageUrl}
         alt={player.name}
         style={{ width: "50px", height: "50px" }}
         className="rounded-full object-cover border mx-auto mb-2"
-      />
+      /> */}
 
       {/* Player name below image */}
       <h2 className="text-xl font-bold mb-4">{player.name}</h2>
